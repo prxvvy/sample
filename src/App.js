@@ -42,7 +42,7 @@ class App extends Component {
   fetcApi = () => {
     const term = this.state.term;
     const page = this.state.page;
-    const url = `https://pixabay.com/api/?key=20562866-73e36c0dcd05be16452e4f012&q=${term}&per_page=25&page=${page}`
+    const url = `https://pixabay.com/api/?key=${yourKey}q=${term}&per_page=25&page=${page}`
     // console.log(url);
     fetch(url)
       .then(res => res.json())
